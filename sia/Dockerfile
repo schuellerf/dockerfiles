@@ -12,6 +12,6 @@ RUN apt-get update && \
     rm -rf /tmp/sia/ /tmp/sia.zip /var/lib/apt/lists
 
 WORKDIR /sia
-EXPOSE 9982
+EXPOSE 9981 9982
 
 CMD ["/usr/local/bin/siad"]
